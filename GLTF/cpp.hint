@@ -1,0 +1,2 @@
+#define GLTF_API __declspec(dllexport)
+#define GLTF_API __declspec(dllimport)
