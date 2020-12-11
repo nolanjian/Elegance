@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     bool bUseWXFrame = true;
     if (bUseWXFrame)
     {
-        HINSTANCE myDLL = LoadLibrary(L"WXFrame.dll");
+        HINSTANCE myDLL = LoadLibrary(L"Frame.dll");
         if (myDLL)
         {
             auto pp = GetProcAddress(myDLL, "RunApp");

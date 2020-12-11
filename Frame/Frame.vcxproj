@@ -135,12 +135,14 @@
       <PreprocessorDefinitions>WXFRAME_EXPORTS;_DEBUG;_WINDOWS;__WXMSW__;WXUSINGDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\library\cef_binary_83.3.11+g1fac1e5+chromium-83.0.4103.61_windows64;D:\library\wxWidgets\include;D:\library\wxWidgets\lib\vc_x64_dll\mswu;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\library\wxWidgets\lib\vc_x64_dll;D:\library\cef_binary_83.3.11+g1fac1e5+chromium-83.0.4103.61_windows64\Debug;D:\library\cef_binary_83.3.11+g1fac1e5+chromium-83.0.4103.61_windows64\libcef_dll_wrapper\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>wxbase31ud.lib;wxmsw31ud_core.lib;libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\library\wxWidgets\lib\vc_x64_dll;D:\library\cef_binary_83.3.11+g1fac1e5+chromium-83.0.4103.61_windows64\Debug;D:\library\cef_binary_83.3.11+g1fac1e5+chromium-83.0.4103.61_windows64\libcef_dll_wrapper\Debug;$(OutputPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxbase31ud.lib;wxmsw31ud_core.lib;libcef.lib;libcef_dll_wrapper.lib;Scene.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

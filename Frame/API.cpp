@@ -27,15 +27,15 @@ extern "C" {
 		// Create a ClientApp of the correct type.
 		CefRefPtr<CefApp> app = new Elegance::CEFApplication();
 
-		if (!command_line->HasSwitch("type"))
-		{
-			MessageBoxA(nullptr, "browser", "browser", MB_OK);
-		}
-		else
-		{
-			const std::string& process_type = command_line->GetSwitchValue("type");
-			MessageBoxA(nullptr, process_type.c_str(), process_type.c_str(), MB_OK);
-		}
+		//if (!command_line->HasSwitch("type"))
+		//{
+		//	MessageBoxA(nullptr, "browser", "browser", MB_OK);
+		//}
+		//else
+		//{
+		//	const std::string& process_type = command_line->GetSwitchValue("type");
+		//	MessageBoxA(nullptr, process_type.c_str(), process_type.c_str(), MB_OK);
+		//}
 
 		// Execute the secondary process, if any.
 		int exit_code = CefExecuteProcess(main_args, app, nullptr);
