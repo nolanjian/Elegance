@@ -9,14 +9,3 @@
 #else
 #define GLTF_API __declspec(dllimport)
 #endif
-
-// This class is exported from the dll
-class GLTF_API CGLTF {
-public:
-	CGLTF(void);
-	// TODO: add your methods here.
-};
-
-extern GLTF_API int nGLTF;
-
-GLTF_API int fnGLTF(void);
